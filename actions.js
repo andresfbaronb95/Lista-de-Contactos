@@ -38,7 +38,7 @@ const showContact = (contacts, id) => {
 
 const actualizarContacto = function (modificacion) {
     const contactoEncontrado = lista.filter((contacto) => contacto.id === modificacion.id)[0];
-// se modifica todo menos el id para no dañar la secuencia
+
 contactoEncontrado.name = modificacion.name;
 contactoEncontrado.phone = modificacion.phone;
 contactoEncontrado.location = modificacion.location;
